@@ -10,4 +10,10 @@ declare global {
 	}
 }
 
+declare module '*.md' {
+	import type { SvelteComponentTyped } from 'svelte';
+
+	export default class MdsvexComponent extends SvelteComponentTyped<{}> {}
+}
+
 export {};
