@@ -8,9 +8,17 @@
 		leadingIcon = null,
 		trailingIcon = null,
 	} = $props();
+
+	let target = $derived.by(()=>{
+		if (ref.startsWith("http")) {
+			return "_blank";
+		} else {
+			return "_self";
+		}
+	})
 </script>
 
-<a href={ref}>
+<a href={ref} target={target}>
 	{#if children}
 		{@render children()}
 	{:else}
