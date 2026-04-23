@@ -1,6 +1,6 @@
 ---
-title: Maschera
+title: Jordans history
 year: Sport
-link: https://unmasqed.webflow.io/
-thumbnail: /images/projects/2025/unmasqed.png
+link: https://pudding.cool/2018/09/jordans/
+thumbnail: /images/projects/Sport/jordans.png
 ---

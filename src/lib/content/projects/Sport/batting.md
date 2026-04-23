@@ -2,5 +2,5 @@
 title: Batting by the Numbers
 year: Sport
 link: https://pudding.cool/2024/09/lineup/
-thumbnail: /images/projects/2024/batting.png
+thumbnail: /images/projects/Sport/batting.png
 ---
