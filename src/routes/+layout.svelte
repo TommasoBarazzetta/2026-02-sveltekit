@@ -9,7 +9,17 @@
 	import Header from "$lib/components/Header.svelte";
 	import Footer from "$lib/components/Footer.svelte";
 
+	import { theme } from '$lib/stores.js';
+	import { onMount } from 'svelte';
+
 	let { children } = $props();
+
+	onMount(() => {
+		const unsubscribe = theme.subscribe(value => {
+			document.body.className = value;
+		});
+		return unsubscribe;
+	});
 </script>
 
 <svelte:head>

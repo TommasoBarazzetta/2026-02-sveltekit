@@ -1,9 +1,11 @@
 <script>
 	import Link from "$lib/components/Link.svelte";
+	import ThemeToggle from "$lib/components/ThemeToggle.svelte";
 </script>
 
 <header class="safe-area">
 	<Link title="W–D" ref="/" />
+	<ThemeToggle />
 
 	<nav>
 		<Link title="About" ref="/about" />
@@ -20,7 +22,6 @@
 
 		display: flex;
 		gap: var(--size-8);
-		justify-content: space-between;
 		align-items: center;
 	}
 
@@ -28,5 +29,6 @@
 		display: flex;
 		gap: var(--size-6);
 		align-items: center;
+		margin-left: auto;
 	}
 </style>
