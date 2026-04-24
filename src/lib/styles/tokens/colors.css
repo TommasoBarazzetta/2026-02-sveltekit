@@ -55,7 +55,7 @@
 /* Manual theme override */
 .light {
 	--color-canvas: var(--hex-neutral-100);
-		--color-surface: var(--hex-neutral-100);
+		--color-surface: var(--hex-neutral-200);
 
 		--color-ink: var(--hex-neutral-900);
 		--color-ink-secondary: var(--hex-neutral-500);
