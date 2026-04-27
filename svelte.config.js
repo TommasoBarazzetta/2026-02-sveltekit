@@ -24,6 +24,10 @@ const config = {
 			strict: true
 		})
 	}
+	paths: {
+			// SOSTITUISCI 'nome-repo' con il nome esatto della tua repository su GitHub
+			base: process.env.NODE_ENV === 'production' ? '/2026-02-sveltekit' : '',
+		}
 };
 
 export default config;
