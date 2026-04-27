@@ -2,12 +2,14 @@
 	import { theme } from '$lib/stores.js';
 	import Icon from '$lib/components/Icon.svelte';
 
+	let { class: className } = $props();
+
 	function toggleTheme() {
 		theme.set($theme === 'light' ? 'dark' : 'light');
 	}
 </script>
 
-<button onclick={toggleTheme} aria-label="Toggle theme">
+<button class={className} onclick={toggleTheme} aria-label="Toggle theme">
 	<Icon name={$theme === 'light' ? 'moon' : 'sun'} />
 </button>
 

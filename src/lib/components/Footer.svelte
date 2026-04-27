@@ -19,4 +19,14 @@
 	img {
 		height: var(--size-9);
 	}
+
+	@media (max-width: 768px) and (min-width: 481px) {
+		footer {
+			padding-block: var(--size-6);
+		}
+
+		img {
+			height: var(--size-11);
+		}
+	}
 </style>

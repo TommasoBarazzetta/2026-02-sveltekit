@@ -24,6 +24,14 @@
 		}
 	}
 
+	@media (max-width: 480px) {
+		label {
+			font-size: var(--size-4);
+			padding-block: var(--size-2);
+			padding-inline: var(--size-2);
+		}
+	}
+
 	input {
 		display: none;
 	}

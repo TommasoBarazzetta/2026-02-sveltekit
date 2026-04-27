@@ -90,6 +90,10 @@
 		align-items: center;
 		gap: var(--size-2);
 
+		h3 {
+			font-size: var(--size-5);
+		}
+
 		span {
 			color: var(--color-ink-secondary);
 		}
@@ -98,5 +102,11 @@
 	.arrow {
 		transition: transform 0.75s var(--ease-out-quart);
 		transform: translateY(100%);
+	}
+
+	@media (max-width: 480px) {
+		hgroup h3 {
+			font-size: var(--size-4);
+		}
 	}
 </style>

@@ -54,4 +54,28 @@
 		grid-template-columns: 1fr 1fr;
 		gap: var(--size-5);
 	}
+
+	@media (max-width: 768px) {
+		.hero {
+			padding-block: var(--size-10);
+		}
+
+		.projects {
+			grid-template-columns: 1fr;
+		}
+	}
+
+	@media (max-width: 480px) {
+		.hero {
+			padding-block: var(--size-7);
+
+			h1 {
+				font-size: var(--size-5);
+			}
+		}
+
+		.filters {
+			gap: var(--size-4);
+		}
+	}
 </style>

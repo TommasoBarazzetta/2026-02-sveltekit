@@ -5,7 +5,7 @@
 
 <header class="safe-area">
 	<Link title="W–D" ref="/" />
-	<ThemeToggle />
+	<ThemeToggle class="theme-toggle" />
 
 	<nav>
 		<Link title="About" ref="/about" />
@@ -30,5 +30,19 @@
 		gap: var(--size-6);
 		align-items: center;
 		margin-left: auto;
+	}
+
+	@media (max-width: 480px) {
+		header {
+			padding-block: var(--size-4);
+		}
+
+		.theme-toggle {
+			display: none;
+		}
+
+		nav {
+			margin-left: 0;
+		}
 	}
 </style>
