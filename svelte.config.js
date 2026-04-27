@@ -28,15 +28,16 @@ const config = {
 				base: process.env.NODE_ENV === 'production' ? '/2026-02-sveltekit' : '',
 			},
 			// AGGIUNGI QUESTO BLOCCO:
-        prerender: {
-            handleHttpError: ({ path, referrer, message }) => {
-                // Ignora l'errore se Svelte non trova la radice assoluta
-                if (path === '/' || path === '/2026-02-sveltekit') return;
-                
-                // Altrimenti lancia l'errore normalmente
-                throw new Error(message);
-            }
+		prerender: {
+			handleHttpError: ({ path, referrer, message }) => {
+				// Ignora l'errore se Svelte non trova la radice assoluta
+				if (path === '/' || path === '/2026-02-sveltekit') return;
+				
+				// Altrimenti lancia l'errore normalmente
+				throw new Error(message);
+			}
 		}
+	}
 };
 
 export default config;
