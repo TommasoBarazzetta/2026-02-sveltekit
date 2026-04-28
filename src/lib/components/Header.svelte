@@ -48,7 +48,7 @@
 		}
 
 		nav a {
-			font-size: var(--size-3);
+			font-size: var(--size-2);
 		}
 	}
 </style>
