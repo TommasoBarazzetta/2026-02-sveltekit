@@ -35,6 +35,7 @@
 	@media (max-width: 480px) {
 		header {
 			padding-block: var(--size-4);
+			gap: var(--size-4);
 		}
 
 		.theme-toggle {
@@ -43,11 +44,11 @@
 
 		nav {
 			margin-left: 0;
-			gap: var(--size-4);
+			gap: var(--size-3);
 		}
 
 		nav a {
-			font-size: var(--size-4);
+			font-size: var(--size-3);
 		}
 	}
 </style>
