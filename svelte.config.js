@@ -19,7 +19,7 @@ const config = {
 				// these options are set automatically — see below
 				pages: 'build',
 				assets: 'build',
-				fallback: undefined,
+				fallback: '404.html',
 				precompress: false,
 				strict: true
 			}),
@@ -31,9 +31,9 @@ const config = {
 		prerender: {
 			handleHttpError: ({ path, referrer, message }) => {
 				// Ignora l'errore se Svelte non trova la radice assoluta
-				if (path === '/' || path === '/2026-02-sveltekit') return;
-				
-				// Altrimenti lancia l'errore normalmente
+				if (path.startsWith('/images') || path.startsWith('/') || path.includes('batting.png')) {
+					return;
+				}
 				throw new Error(message);
 			}
 		}
