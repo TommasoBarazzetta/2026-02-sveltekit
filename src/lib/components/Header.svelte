@@ -32,7 +32,7 @@
 		margin-left: auto;
 	}
 
-	@media (max-width: 480px) {
+	@media (max-width: 900px) {
 		header {
 			padding-block: var(--size-4);
 			gap: var(--size-4);
