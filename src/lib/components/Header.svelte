@@ -8,8 +8,9 @@
 	<ThemeToggle class="theme-toggle" />
 
 	<nav>
-		<Link title="About" ref="https://pudding.cool" />
+		<Link class="nav-link" title="About" ref="https://pudding.cool" />
 		<Link
+			class="nav-link"
 			title="@webdesign_ddc"
 			ref="https://www.instagram.com/webdesign_ddc"
 		/>
@@ -32,7 +33,7 @@
 		margin-left: auto;
 	}
 
-	@media (max-width: 900px) {
+	@media (max-width: 480px) {
 		header {
 			padding-block: var(--size-4);
 			gap: var(--size-4);
@@ -47,8 +48,8 @@
 			gap: var(--size-3);
 		}
 
-		nav a {
-			font-size: var(--size-2);
+		.nav-link {
+			font-size: var(--size-3);
 		}
 	}
 </style>

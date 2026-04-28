@@ -7,6 +7,7 @@
 		children = null,
 		leadingIcon = null,
 		trailingIcon = null,
+		class: additionalClass = "",
 	} = $props();
 
 	let target = $derived.by(()=>{
@@ -18,7 +19,7 @@
 	})
 </script>
 
-<a href={ref} target={target}>
+<a href={ref} target={target} class={additionalClass}>
 	{#if children}
 		{@render children()}
 	{:else}
