@@ -8,7 +8,7 @@
 	<ThemeToggle class="theme-toggle" />
 
 	<nav>
-		<Link title="About" ref="/about" />
+		<Link title="About" ref="https://pudding.cool" />
 		<Link
 			title="@webdesign_ddc"
 			ref="https://www.instagram.com/webdesign_ddc"
