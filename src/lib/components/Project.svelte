@@ -108,5 +108,9 @@
 		hgroup h3 {
 			font-size: var(--size-4);
 		}
+
+		hgroup span {
+			font-size: var(--size-3);
+		}
 	}
 </style>

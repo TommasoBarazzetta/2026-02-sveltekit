@@ -43,6 +43,11 @@
 
 		nav {
 			margin-left: 0;
+			gap: var(--size-4);
+		}
+
+		nav a {
+			font-size: var(--size-4);
 		}
 	}
 </style>
