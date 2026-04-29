@@ -4,15 +4,15 @@
 </script>
 
 <header class="safe-area">
-	<Link title="W–D" ref="/" />
+	<Link title="T-B" ref="/" />
 	<ThemeToggle class="theme-toggle" />
 
 	<nav>
 		<Link class="nav-link" title="About" ref="https://pudding.cool" />
 		<Link
 			class="nav-link"
-			title="@webdesign_ddc"
-			ref="https://www.instagram.com/webdesign_ddc"
+			title="@tommasobarazzettaa"
+			ref="https://www.instagram.com/tommasobarazzettaa"
 		/>
 	</nav>
 </header>
