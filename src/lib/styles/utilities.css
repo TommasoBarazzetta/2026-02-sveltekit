@@ -1,0 +1,9 @@
+.safe-area {
+	padding-inline: var(--size-10);
+}
+
+@media (max-width: 480px) {
+	.safe-area {
+		padding-inline: var(--size-5);
+	}
+}

@@ -1,0 +1,82 @@
+:root {
+	/* HEX Colors */
+	--hex-brand-50:  #F4F7DF;
+	--hex-brand-100: #E8F0C2;
+	--hex-brand-200: #C7D295;
+	--hex-brand-300: #9AA66A;
+	--hex-brand-400: #606C38;
+	--hex-brand-500: #4F5C28;
+	--hex-brand-600: #3F4D1C;
+	--hex-brand-700: #3F4D1C;
+	--hex-brand-800: #313E11;
+	--hex-brand-900: #26330A;
+
+	--hex-neutral-50:  #FAFAFA;
+	--hex-neutral-100: #EDEEEF;
+	--hex-neutral-200: #C1C1C1;
+	--hex-neutral-300: #A3A3A3;
+	--hex-neutral-400: #868686;
+	--hex-neutral-500: #6A6A6A;
+	--hex-neutral-600: #505050;
+	--hex-neutral-700: #393939;
+	--hex-neutral-800: #242424;
+	--hex-neutral-900: #191919;
+
+	/* Named Colors */
+	@media screen and (prefers-color-scheme: light) {
+		--color-canvas: var(--hex-neutral-50);
+		--color-surface: var(--hex-neutral-100);
+
+		--color-ink: var(--hex-neutral-900);
+		--color-ink-secondary: var(--hex-neutral-500);
+		--color-ink-inverted: var(--hex-neutral-50);
+
+		--color-link: var(--hex-brand-600);
+
+		--color-filter--hover: var(--hex-neutral-100);
+		--color-filter--selected: var(--hex-brand-500);
+	}
+
+	@media screen and (prefers-color-scheme: dark) {
+		--color-canvas: var(--hex-neutral-900);
+		--color-surface: var(--hex-neutral-800);
+
+		--color-ink: var(--hex-neutral-50);
+		--color-ink-secondary: var(--hex-neutral-400);
+		--color-ink-inverted: var(--hex-neutral-900);
+
+		--color-link: var(--hex-brand-500);
+
+		--color-filter--hover: var(--hex-neutral-800);
+		--color-filter--selected: var(--hex-brand-600);
+	}
+}
+
+/* Manual theme override */
+.light {
+	--color-canvas: var(--hex-neutral-100);
+		--color-surface: var(--hex-neutral-200);
+
+		--color-ink: var(--hex-neutral-900);
+		--color-ink-secondary: var(--hex-neutral-500);
+		--color-ink-inverted: var(--hex-neutral-50);
+
+		--color-link: var(--hex-brand-400);
+
+		--color-filter--hover: var(--hex-neutral-200);
+		--color-filter--selected: var(--hex-brand-400);
+}
+
+.dark {
+	--color-canvas: var(--hex-neutral-900);
+	--color-surface: var(--hex-neutral-800);
+
+	--color-ink: var(--hex-neutral-50);
+	--color-ink-secondary: var(--hex-neutral-400);
+	--color-ink-inverted: var(--hex-neutral-900);
+
+	--color-link: var(--hex-brand-500);
+
+	--color-filter--hover: var(--hex-neutral-800);
+	--color-filter--selected: var(--hex-brand-600);
+}
